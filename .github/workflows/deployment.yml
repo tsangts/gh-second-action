@@ -2,7 +2,7 @@ name: Deploy Project
 on: [push, workflow_dispatch]
 jobs:
   test:
-    runs-on: [self-hosted, X64, Windows, "RISEDDIE2"] #ubuntu-latest
+    runs-on: [self-hosted, Windows] #ubuntu-latest
     steps:
       - name: Get code from repo
         uses: actions/checkout@v3
