@@ -2,7 +2,7 @@ name: Deploy Project
 on: [push, workflow_dispatch]
 jobs:
   test:
-    runs-on: debian-runner #ubuntu-latest
+    runs-on: self-hosted #ubuntu-latest
     steps:
       - name: Get code from repo
         uses: actions/checkout@v3
